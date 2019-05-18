@@ -1,3 +1,13 @@
-<p>
-  header works!
-</p>
+<nav class="navbar  navbar-light bg-light" id="navbar">
+  <!-- <button type="button" class="btn" (click)="backClicked()"></button> <!-- back button that calls the backClicked function to go to last page -->
+  <img class="img" src="" alt="Logo" routerLink="/"> <!-- logo made in photoshop -->
+
+    <div class="navbar-nav" > <!-- routing learned in class, not needed as only home page but would be usefull if extra pages are added later -->
+        <div *ngFor='let pageLink of pageLinks' class="nav-item active">
+          <a class='nav-item nav-link'
+            [routerLink]='pageLink.path'
+            routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact: true}'>{{pageLink.name}}</a>
+        </div>
+    </div>
+</nav>

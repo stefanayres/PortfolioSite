@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  pageLinks = [
+      {path: '/',   name: 'Home'},
+      {path: '/about', name: 'About Me'},
+      {path: '/mywork', name: 'My Work'}
+    ];
+
   constructor() { }
 
   ngOnInit() {

@@ -10,6 +10,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { MyWorkDetailsComponent } from './my-work-details/my-work-details.component';
 import { HeaderComponent } from './Shared/header/header.component';
 import { FooterComponent } from './Shared/footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './Shared/footer/footer.component';
     MyWorkComponent,
     MyWorkDetailsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
