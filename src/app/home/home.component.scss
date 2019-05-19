@@ -1,5 +1,76 @@
+@keyframes bounce { // animation for card images to bounce
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
 // jumbotron styles
+.jumbotron {
+  background-image: url(https://via.placeholder.com/500/b9b9b9/000/?text=StefanDesigns.org);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 25rem;
+}
 
-.left col-sm-6{
+.threeImgDiv {
+  height: auto;
+  padding-bottom: 1rem;
+}
 
+.webDevSlot {
+  background-image: url(https://cdn-images-1.medium.com/max/2600/1*0FHkbWmMC7YuI2gZyDTlGw.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 25rem;
+  padding: 3rem;
+  color: white;
+}
+
+.card {
+  border: 0;
+}
+
+.card-img-top {
+  border-radius: 50%;
+  box-shadow: 0em .2em rgba(0, 0, 0, 0.125);
+}
+
+.card-img-top  {
+  border-radius: 50%;
+  box-shadow: 0em .2em rgba(0, 0, 0, 0.125);
+  // animation for card images to bounce
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.card-img-top:hover { // animation for card images to bounce
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.card-body {
+  text-align: center;
+  border-top: .1em solid rgba(0, 0, 0, 0.125);
+  margin-top: .5em;
 }
