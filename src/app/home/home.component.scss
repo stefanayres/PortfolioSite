@@ -16,6 +16,7 @@
 	}
 }
 
+
 // jumbotron styles
 .jumbotron {
   background-image: url(https://via.placeholder.com/500/b9b9b9/000/?text=StefanDesigns.org);
@@ -23,7 +24,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 25rem;
+  height: 100vh;
 }
 
 .threeImgDiv {
@@ -52,6 +53,8 @@
 }
 
 .card-img-top  {
+  max-width: 20rem;
+  max-height: 20rem;
   border-radius: 50%;
   box-shadow: 0em .2em rgba(0, 0, 0, 0.125);
   // animation for card images to bounce
