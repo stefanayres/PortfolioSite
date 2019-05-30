@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,16 @@ export class HomeComponent implements OnInit {
   Intro   = 'Stefan Ayres';
   slogin  = 'Full Stack Web Developer & Designer'
 
+
+
   constructor() { }
 
   ngOnInit() {
+    AOS.init({
+      duration: 1200,
+    })
+
+
   }
 
 }
