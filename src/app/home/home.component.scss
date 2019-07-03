@@ -28,19 +28,8 @@
 }
 
 .threeImgDiv {
-  height: auto;
+  height: 80vh;
   padding-bottom: 1rem;
-}
-
-.webDevSlot {
-  background-image: url(https://cdn-images-1.medium.com/max/2600/1*0FHkbWmMC7YuI2gZyDTlGw.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 25rem;
-  padding: 3rem;
-  color: white;
 }
 
 .card {
@@ -53,10 +42,12 @@
 }
 
 .card-img-top  {
-  max-width: 20rem;
-  max-height: 20rem;
+  max-width: 15rem;
+  max-height: 15rem;
   border-radius: 50%;
   box-shadow: 0em .2em rgba(0, 0, 0, 0.125);
+	margin-left: auto;
+	margin-right: auto;
   // animation for card images to bounce
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -76,4 +67,107 @@
   text-align: center;
   border-top: .1em solid rgba(0, 0, 0, 0.125);
   margin-top: .5em;
+}
+
+//fixed coding image
+.webDevSlot {
+  background-image: url(https://cdn-images-1.medium.com/max/2600/1*0FHkbWmMC7YuI2gZyDTlGw.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 3rem;
+  color: white;
+  height: 90vh;
+}
+
+.aboutSection {
+	padding: 3rem;
+	height: 100%;
+}
+
+.nameInfo {
+	text-align: right;
+	padding: 2rem;
+	border-right: .1em solid #646464;
+	width: 30%
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	.threeImgDiv {
+	  height: auto;
+	  padding-bottom: 1rem;
+	}
+
+
+	.nameInfo {
+		text-align: center;
+		padding: 2rem;
+		border-bottom: .1em solid #646464;
+		border-right: none;
+		width: 100%;
+		height:auto;
+	}
+
 }
